@@ -1,4 +1,13 @@
-const permittedRoles = ["FlameUser", "AudioPlayersUser", "FireslimeGamer"];
+const permittedRoles = [
+  "General Developer",
+  "Game Designer",
+  "Programmer",
+  "Artist",
+  "Sound Designer/Composer",
+  "Narrative Designer",
+  "Community Member",
+  "Circulus Veri" // ???
+];
 
 module.exports = {
   roles: message => {
@@ -7,9 +16,7 @@ To assign yourself a role, type !set-role [role-name]
 
 Available roles:
 
- - FlameUser: If you are here because you are using Flame on your project
- - AudioPlayersUser: If you are here because you are using AudioPlayers on your project
- - FireslimeGamer: If you are here because of our games
+${permittedRoles.map(r => ` - ${r}\n`)}
     `);
   },
   addRole: message => {

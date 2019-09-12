@@ -1,6 +1,6 @@
 # Fireslime Bot
 
-This is the Fireslime Discord Bot
+This is the Harbrus Discord Bot
 
 ## Running
 
