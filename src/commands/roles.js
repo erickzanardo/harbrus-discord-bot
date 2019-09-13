@@ -5,8 +5,7 @@ const permittedRoles = [
   "Artist",
   "Sound Designer/Composer",
   "Narrative Designer",
-  "Community Member",
-  "Circulus Veri" // ???
+  "Community Member"
 ];
 
 module.exports = {
