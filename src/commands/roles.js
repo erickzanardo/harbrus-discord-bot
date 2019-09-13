@@ -33,7 +33,7 @@ ${permittedRoles.map(r => ` - ${r}\n`)}
           message.reply("Your role is set!");
         })
         .catch(err => {
-          message.reply("Sorry, I could not set your role, contact a Fireslime.");
+          message.reply("Sorry, I could not set your role, contact a Moderator.");
           /* eslint-disable no-console */
           console.error(err);
         });
