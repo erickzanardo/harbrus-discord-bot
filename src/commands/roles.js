@@ -18,7 +18,7 @@ ${permittedRoles.map(r => ` - ${r}\n`)}
 `);
   },
   addRole: message => {
-    const roleName = message.content.replace("set-role ", "");
+    const roleName = message.content.replace("!set-role ", "");
 
     const role = message.guild.roles.find("name", roleName);
 
