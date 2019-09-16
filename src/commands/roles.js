@@ -14,9 +14,8 @@ module.exports = {
 To assign yourself a role, type !set-role [role-name]
 
 Available roles:
-
 ${permittedRoles.map(r => ` - ${r}\n`)}
-    `);
+`);
   },
   addRole: message => {
     const roleName = message.content.replace("set-role ", "");
