@@ -1,10 +1,10 @@
 const permittedRoles = [
-  "General Developer",
-  "Game Designer",
-  "Programmer",
-  "Artist",
-  "Sound Designer/Composer",
-  "Narrative Designer",
+  "General Dev",
+  "Game Design",
+  "Programming",
+  "Art",
+  "Sound",
+  "Narrative",
   "Community Member"
 ];
 
