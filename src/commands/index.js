@@ -1,4 +1,3 @@
-const { flameSrc, flameDoc } = require("./flame");
 const { roles, addRole } = require("./roles");
 
 const shouldInterceptMessage = (prefix, channel, message) => {
