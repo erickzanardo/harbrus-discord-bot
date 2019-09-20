@@ -13,9 +13,9 @@ module.exports = {
     client.on("message", message => {
         if (message.content.startsWith("ping")) {
           message.reply("Pong!");
-        } else if (shouldInterceptMessage("!role", "roles", message)) {
+        } else if (shouldInterceptMessage("!role", "set-your-role", message)) {
           roles(message);
-        } else if (shouldInterceptMessage("!set-role", "roles", message)) {
+        } else if (shouldInterceptMessage("!set-role", "set-your-role", message)) {
           addRole(message);
         }
       });
