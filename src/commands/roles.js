@@ -20,11 +20,11 @@ ${permittedRoles.map(r => ` - ${r}\n`)}
   addRole: message => {
     const roleName = message.content.replace("!set-role ", "");
 
-    const role = message.guild.roles.find("name", roleName);
+    const role = message.guild.roles.find(r => r.name.toLowerCase() == roleName.toLowerCase());
 
     if (!role) {
       message.reply(`Can't find role "${roleName}"`);
-    } else if (permittedRoles.indexOf(roleName) == -1) {
+    } else if (permittedRoles.map(r => r.toLowerCase()).indexOf(roleName.toLowerCase()) == -1) {
       message.reply(`You can't assing yourself the role "${roleName}"`);
     } else {
       message.member.addRole(role)
