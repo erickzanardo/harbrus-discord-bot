@@ -3,7 +3,7 @@ const permittedRoles = [
   "Game Design",
   "Programming",
   "Art",
-  "Sound",
+  "Audio",
   "Narrative",
   "Community Member"
 ];
